@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            padding: 10px;
+            border: 10px solid #000;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        /* 获取div的宽度
+        console.log($("div").css("width"));
+        */
+
+        /* 改变div的宽度
+         第一种：
+         $("div").css("width",400);
+         第二种：
+         $("div").width(400);
+        */
+
+        /* 这样直接获取的是数字
+        console.log($("div").width());
+        */
+        /*
+        获取页面的可视区的宽度和高度
+        console.log($(window).width());
+        console.log($(window).height());
+        */
+        /*
+        innerWidth获取的是padding+width
+        console.log($("div").innerWidth());//padding+width
+        console.log($("div").outerWidth());//padding+width+border
+        console.log($("div").outerWidth(true));//padding+width+border+margin
+        */
+
+
+    });
+</script>
+</body>
+</html>

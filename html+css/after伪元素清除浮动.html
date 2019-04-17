@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>after伪元素清除浮动</title>
+    <style>
+        .clearfix:after {  /*正常浏览器 清除浮动*/
+            content:"";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .clearfix {
+            *zoom: 1;  /*zoom 1 就是ie6 清除浮动方式  *  ie7一下的版本所识别*/
+        }
+        .father{
+            /*父亲不用设置高度*/
+            width: 300px;
+            border: 1px solid red;
+        }
+        .son{
+            width: 100px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+        .son2{
+            width: 80px;
+            height: 80px;
+            float: left;
+            background-color: blue;
+        }
+        .mother{
+            width: 400px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="father clearfix">
+    <div class="son"></div>
+    <div class="son2"></div>
+</div>
+<div class="mother"></div>
+</body>
+</html>

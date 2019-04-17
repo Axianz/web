@@ -1,0 +1,231 @@
+/*初始化 删除默认的内外边距*/
+*{
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+.clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }
+
+.clearfix {*zoom: 1;}
+.nav li{
+    float: left;
+    margin: 0 20px; /*导航栏字体间的间隔*/
+
+}
+body{
+    background-color: #fafafa;
+}
+/*顶部导航栏 start*/
+.header{ /*header是整个导航栏外面最大的盒子*/
+    height: 100px;
+    background-color: #ffffff;
+}
+.inner{ /*inner是导航栏里面的内容*/
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto; /*块元素居中对齐，记得必须要有宽*/
+    line-height: 100px; /*让inner里面的内容(li)垂直居中*/
+}
+.logo{
+    float: left;
+}
+.nav{
+    float: right;
+}
+
+.nav li a{
+    color: #333333;
+    text-decoration: none; /*这是去掉下划线*/
+}
+.nav li a:hover{
+    color: #2288f6;  /*鼠标触碰时字体显示的颜色*/
+}
+/*顶部导航栏 end*/
+
+/*banner start*/
+.banner{
+    height: 620px;
+    background: url("../images/banner.jpg") no-repeat top center; /*插入图片并且居中*/
+}
+/*banner end*/
+.service ,.case{
+    margin: 75px auto 0;
+    width: 1055px;
+}
+.service-hd{
+    border-top: 1px solid #cccccc;
+    margin: 0 25px;
+}
+.service-hd h3{
+    width: 167px;
+    height: 46px;
+    margin: -15px auto 0;
+}
+.service-hd p{
+    font-size: 12px;
+    color: #666666;
+    line-height: 26px;
+    text-align: center;
+    width: 830px;
+    margin: 15px auto 0;
+}
+.service-bd{
+    margin-top: 40px;
+    overflow: hidden; /*清除浮动*/
+}
+.service-bd li{
+    width: 314px;
+    height: 510px;
+    background-color: #ffffff;
+    float: left;
+    border: 1px solid #e7e8e9;
+}
+.yingxiao{
+    margin: 0 45px;
+}
+.service-bd img{
+    margin: 40px 35px;
+}
+.service-bd h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal; /*字体不要加粗*/
+    height: 40px;
+}
+.service-bd p{
+    font-size: 12px;
+    color: #666666;
+    width: 235px;
+    margin: 0 auto;
+    line-height: 26px;
+
+}
+.service-bd a{
+    display: block;
+    width: 148px;
+    height: 38px;
+    border: 1px solid #ff9412;
+    margin: 30px auto 0;
+    text-decoration: none;
+    text-align: center;
+    line-height: 38px;
+    color: #ff9412 ;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.service-bd a:hover{
+    color: #ffffff;
+    background-color: #ff9412;
+}
+.case-bd{
+    margin-top: 80px;
+    position: relative;
+    background-color: #ffffff;
+    /*overflow: hidden; !*清除浮动*!*/
+}
+.case-bd li{
+    width: 325px;
+    height: 210px;
+    float: left;
+    position: relative;
+}
+.case-bd-m{
+    margin: 0 40px;
+}
+.text{
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 45px;
+    color: #ffffff;
+    font-size: 12px;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5) url("../images/fdj.png") no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.case-bd li:hover .mask{
+    display: block;
+
+}
+.left,.right{
+    width: 60px;
+    height: 60px;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    text-align: center;
+    line-height: 60px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.left{
+    left: -90px;
+}
+.right{
+    right: -90px;
+}
+.case-bd a:hover{
+    background: rgba(0,0,0,0.4);
+}
+.media-bd{
+    width: 1045px;
+    height: 240px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.media-bd ul{
+    width: 1060px;
+}
+.media-bd li{
+    width: 210px;
+    height: 60px;
+    float: left;
+    border-right: 1px dashed #cccccc;
+    border-bottom: 1px dashed #cccccc;
+    text-align: center;
+    padding-top: 20px;
+}
+/*页面底部start*/
+.footer{
+    height: 165px;
+    background-color: #212425;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.subnav{
+    text-align: center;
+    margin-top: 50px;
+    color: #f0f1f1;
+    font-size: 14px;
+}
+.subnav a{
+    color: #f0f1f1;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.subnav a:hover{
+    color: #2288f6;
+    text-decoration: underline;
+}
+.footer p{
+    color: #888888;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li.basic {
+            background-color: pink;
+            font-size: 32px;
+            color: red;
+        }
+
+        .bigger {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="添加basic类">
+<input type="button" value="移除basic类">
+<input type="button" value="添加bigger类">
+<input type="button" value="移除bigger类">
+<input type="button" value="判断bigger类">
+<input type="button" value="切换类">
+<ul>
+    <li class="aa bb cc dd">1</li>
+    <li class="aa bb cc dd">2</li>
+    <li class="aa bb cc dd">3</li>
+    <li class="aa bb cc dd">4</li>
+</ul>
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        //添加basic类
+        $("input").eq(0).click(function () {
+            $("li").addClass("basic")
+        });
+        //移除basic类
+        $("input").eq(1).click(function () {
+            $("li").removeClass("basic")
+        });
+        //添加bigger类
+        $("input").eq(2).click(function () {
+            $("li").addClass("bigger")
+        });
+        //移除bigger类
+        $("input").eq(3).click(function () {
+            $("li").removeClass("bigger")
+        });
+        //判断类
+        $("input").eq(4).click(function () {
+            console.log($("li").hasClass("bigger"));
+        });
+        //切换类toggle是 切换的意思
+        $("input").eq(5).click(function () {
+            $("li").toggleClass("basic")
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery初体验</title>
+    <style>
+        div {
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+            display: none;
+        }
+    </style>
+    <!--国内一般用1.12版本，因为兼容IE678-->
+    <script src="version/jquery-1.12.4.js"></script>
+    <script>
+        // 入口函数的标准写法
+        $(document).ready(function () {
+            // 注册事件 把on 去掉
+            $("#btn1").click(function () {
+                $("div").show(1000);
+            });
+            $("#btn2").click(function () {
+                $("div").text("我是内容");
+            })
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="展示" id="btn1">
+<input type="button" value="设置内容" id="btn2">
+<div></div>
+<div></div>
+<div></div>
+
+</body>
+</html>

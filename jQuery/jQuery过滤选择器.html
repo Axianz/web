@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+    <li>过滤选择器</li>
+</ul>
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        // even获取下标为偶数的元素，下标从0开始算
+       $("li:even").css("backgroundColor","blue");
+        // odd获取下标为奇数的元素，下标从0开始算
+       $("li:odd").css("backgroundColor","red");
+        //first 获取第一个元素
+       $("li:first").css("fontSize","20px");
+        //first 获取最后一个元素
+       $("li:last").css("fontSize","20px");
+       //eq下标选择器
+       $("li:eq(2)").css("fontSize","20px");
+
+
+
+    });
+</script>
+</body>
+</html>

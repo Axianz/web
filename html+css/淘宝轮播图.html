@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tb {
+            width: 520px;
+            height: 280px;
+            /*background-color: pink;*/
+            margin: 100px auto;
+            position: relative; /*相对定位*/
+        }
+
+        .tb a {
+            width: 24px;
+            height: 36px;
+            background-color: #2288f6;
+            display: block;
+            position: absolute;
+        }
+
+        .left {
+            left: 0;
+            top: 50%;
+            margin-top: -18px;
+            background-image: url("images/left.png");
+        }
+
+        .right {
+            right: 0;
+            top: 50%;
+            margin-top: -18px;
+            background-image: url("images/right.png");
+        }
+
+        .tb ul {
+            list-style: none;
+            width: 70px;
+            height: 13px;
+            background: rgba(255, 255, 255, 0.3); /*背景透明，三个255是白色*/
+            border-radius: 8px;
+            position: absolute; /*想要在别的容器上面就加绝对定位，还有父亲容器是相对定位*/
+            bottom: 18px;
+            /* 水平居中*/
+            left: 50%; /*水平走父亲容器的一半*/
+            margin-left: -35px; /*左走自己的一半*/
+        }
+
+        .tb ul li {
+            width: 8px;
+            height: 8px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            float: left; /*左浮动*/
+            margin: 3px; /*点与点之间的间隔*/
+        }
+
+        .tb .current {
+            background-color: #f40;
+        }
+    </style>
+</head>
+<body>
+<div class="tb">
+    <img src="images/tb.jpg">
+    <a href="#" class="left"></a>
+    <a href="#" class="right"></a>
+    <ul>
+        <li class="current"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

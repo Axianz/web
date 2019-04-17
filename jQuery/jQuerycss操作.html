@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>赵奕欢</li>
+    <li>郑爽</li>
+    <li>柳岩</li>
+    <li>杨幂</li>
+</ul>
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+
+            /*  css(name,value),修改单个样式
+                name：样式名 value:样式值
+                $("li").css("backgroundColor","red")
+                       .css("fontSize","32px")
+                       .css("color","blue");
+           */
+
+            //css对象，可以修改多个对象
+        $("li").css({
+              backgroundColor: "pink",
+              fontSize:"32px",
+              color: "red",
+              border:"1px solid black"
+          });
+
+          //获取样式
+        // console.log($("li").css("color"));
+    });
+</script>
+</body>
+</html>

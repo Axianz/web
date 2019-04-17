@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z-index叠放次序</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute; /*只有定位的盒子才有z-index，并且默认z-index=0，取值越大越往上，数字后面不用加单位*/
+
+        }
+        .blue{
+            background-color: blue;
+            left: 50px;
+            top: 50px;
+            z-index: 1;/* 设置为第一层*/
+        }
+        .green{
+            background-color: green;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="red"></div>
+<div class="blue"></div>
+<div class="green"></div>
+</body>
+</html>

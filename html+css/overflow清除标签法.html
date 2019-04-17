@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow属性方法 清除浮动</title>
+    <style>
+        .father{
+            width: 300px;
+            border: 1px solid red;
+            overflow: hidden;/* 清除浮动，记住别加错位置，这是给父亲加的*/
+        }
+        .son{
+            width: 100px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+        .son2{
+            width: 80px;
+            height: 80px;
+            float: left;
+            background-color: blue;
+        }
+        .mother{
+            width: 400px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+    <div class="son2"></div>
+</div>
+<div class="mother"></div>
+</body>
+</html>

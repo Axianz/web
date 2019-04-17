@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <p>1111</p>
+    <p>2222</p>
+</div>
+<p class="des">我是外面的P元素</p>
+
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        /*
+
+         清空一个元素的内容
+         $("div").html("");  这种会导致内存泄漏，但是占用的是用户的内存，而且非常非常少
+         所以最好还是用empty清空元素内存
+          $("div").empty();
+          $("div").remove(); 把整个div都移除了
+
+         */
+        $(".dex").clone().appendTo("div");
+
+
+    });
+</script>
+</body>
+</html>

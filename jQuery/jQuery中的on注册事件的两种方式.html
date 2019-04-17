@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="增加" id="btn">
+<div>
+    <p>11111</p>
+    <p>11111</p>
+    <p>11111</p>
+    <p>11111</p>
+</div>
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        /* 这是P自己注册的时间（简单事件）
+      $("p").on("click",function () {
+         alert("呵呵！");
+      });
+      */
+
+        $("div").on("click","p", function () {
+            alert("哈哈");
+        });
+
+      $("#btn").on("click", function () {
+         $("<p>我是新建的P标签</p>").appendTo("div");
+      });
+    });
+</script>
+</body>
+</html>

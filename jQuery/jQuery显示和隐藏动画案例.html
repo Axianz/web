@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            display: none;/*隐藏*/
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="显示">
+<input type="button" value="隐藏">
+<div></div>
+
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+    $("input").eq(0).click(function () {
+         // 不加参数没有动画效果  $("div").show();
+        // show(speed)
+        // 动画持续的时间，1000表示1秒，可以是毫秒值也可以是固定字符，串例如：show("fast")
+        //fast:200ms normal：400ms slow：600ms
+       // $("div").show(1000,function () {
+       //     document.write("哈哈哈，动画完成啦！")
+       // });
+        $("div").show(1000);
+
+        //隐藏
+    });
+    $("input").eq(1).click(function () {
+       $("div").hide(1000);
+    });
+    });
+</script>
+</body>
+</html>

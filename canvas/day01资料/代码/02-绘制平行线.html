@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<!--设置画布大小-->
+<canvas width="600" height="400"></canvas>
+<script>
+    // 获取元素
+    var myCanvas = document.querySelector('canvas');
+    // 取2d的绘制方式
+    var ctx = myCanvas.getContext('2d');
+    // 画平行线
+    ctx.moveTo(100, 100.5); /*这是移动画笔到距离左边100，距离上边100的位置*/
+    ctx.lineTo(300,100.5);  /* 这是绘制一条200长度的线，300=左边100+长度200 ；100是顶部距离*/
+
+    ctx.moveTo(100, 200.5); /*这是移动画笔到距离左边100，距离上边200的位置*/
+    ctx.lineTo(300,200.5); /* 这是绘制一条200长度的线，300=左边100+长度200；200是顶部距离*/
+
+    // 描边
+    ctx.stroke();
+    /*关于线条的问题*/
+    /*1.默认的宽度是多少   1px*/
+    /*2.默认的颜色是什么   黑色*/
+    /*产生原因  对齐的点是线的中心位置  会把线分成两个0.5px 显示的是会不饱和增加宽度*/
+    /*解决方案  前后移动0.5px */
+
+</script>
+</body>
+</html>

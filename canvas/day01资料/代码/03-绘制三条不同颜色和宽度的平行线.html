@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<canvas width="600" height="400"></canvas>
+<script>
+    var myCanvas = document.querySelector('canvas');
+    var ctx = myCanvas.getContext('2d');
+    /*画平行线*/
+
+    /*蓝色  10px*/
+    ctx.beginPath(); /*开始新路径 能解决样式被覆盖的问题*/
+    ctx.moveTo(100, 100); /*这是移动画笔到距离左边100，距离上边100的位置*/
+    ctx.lineTo(300, 100);  /* 这是绘制一条200长度的线，300=左边100+长度200 ；100是顶部距离*/
+    ctx.strokeStyle = 'blue';
+    ctx.lineWidth = 10;
+    ctx.stroke(); /*描边*/
+
+    /*红色 20px*/
+    ctx.beginPath(); /*开始新路径*/
+    ctx.moveTo(100, 200); /*这是移动画笔到距离左边100，距离上边200的位置*/
+    ctx.lineTo(300, 200); /* 这是绘制一条200长度的线，300=左边100+长度200；200是顶部距离*/
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 20;
+    ctx.stroke(); /*描边*/
+
+    /*绿色 30px*/
+    ctx.beginPath(); /*开始新路径*/
+    ctx.moveTo(100, 300); /*这是移动画笔到距离左边100，距离上边200的位置*/
+    ctx.lineTo(300, 300); /* 这是绘制一条200长度的线，300=左边100+长度200；300是顶部距离*/
+    ctx.strokeStyle = 'green'; /*这是设置线条颜色*/
+    ctx.lineWidth = 30;
+    ctx.stroke(); /*描边*/
+
+</script>
+</body>
+</html>

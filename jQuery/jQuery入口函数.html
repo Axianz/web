@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery入口函数</title>
+</head>
+<body>
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    // jQuery的入口函数比js的入口函数执行快
+    window.onload=function(){
+      console.log("这是js的入口函数！");
+    };
+    $(document).ready(function () {
+       console.log("这是jQuery的入口函数的第一种写法");
+    });
+    $(function () {
+       console.log("这是jQuery入口函数的第二种写法");
+    });
+</script>
+</body>
+</html>

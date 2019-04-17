@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片特效案例</title>
+    <style>
+        div{
+            width: 250px;
+            height: 400px;
+            border: 1px solid #cccccc;
+            float: left;
+            margin-left: -1px;
+            position: relative;
+        }
+        div:hover{
+            border: 1px solid #f40;
+           /* position: relative;*/ /*相对定位比标准流高一级，浮在上面*/
+            z-index: 1;
+        }
+        .big{
+            margin-left: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</body>
+</html>

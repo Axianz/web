@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="开始">
+<input type="button" value="结束">
+<div></div>
+
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        //第一个按钮
+        $("input").eq(0).click(function () {
+            $("div").slideDown(1000).slideUp(1000);
+        });
+        //第二个按钮
+        $("input").eq(1).click(function () {
+            /*stop：停止当前正在进行的动画。
+              stop有两个参数:
+              第一个clearQueue：是否清除动画队列；true 或者 false
+              第二个参数：jumpToEnd：是否跳到当前动画的最终效果 true 或者 false
+                            */
+            $("div").stop(true,false);
+        });
+
+    });
+</script>
+</body>
+</html>

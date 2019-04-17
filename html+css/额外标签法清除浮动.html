@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>额外标签法 清除浮动</title>
+    <style>
+        .father{
+            /*父亲不用设置高度*/
+            width: 300px;
+            border: 1px solid red;
+        }
+        .son{
+            width: 100px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+        .son2{
+            width: 80px;
+            height: 80px;
+            float: left;
+            background-color: blue;
+        }
+        .mother{
+            width: 400px;
+            height: 100px;
+            background-color: black;
+        }
+        .clear{
+            clear: both; /*清除左右浮动*/
+            /*清除浮动主要是为了解决父级元素因为子级浮动引起的内部高度为0的问题*/
+            /*如果清除了浮动，父亲自动检测孩子的高度，以最高为标准。所以不用设置高度*/
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+ <div class="son"></div>
+ <div class="son2"></div>
+    <div class="clear"></div><!--在最后一个浮动标签后面，添加一个标签，清除浮动-->
+</div>
+<div class="mother"></div>
+</body>
+</html>

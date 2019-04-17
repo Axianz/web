@@ -1,0 +1,113 @@
+/*版心*/
+.w{
+	width: 1190px;
+	margin: auto; /*版心居中对齐*/
+}
+/*.fr右浮动*/
+.fr{
+	float: right;
+}
+/*.fl左浮动*/
+.fl{
+	float: left;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/*字体图标*/
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?d0hnqg');
+	src:  url('../fonts/icomoon.eot?d0hnqg#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?d0hnqg') format('truetype'),
+	url('../fonts/icomoon.woff?d0hnqg') format('woff'),
+	url('../fonts/icomoon.svg?d0hnqg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*京东顶部start*/
+.J_event{
+	background-color: #000000;
+}
+.J_event a{
+	display: block; /*转为块元素*/
+	height: 80px;
+	background: url("../images/top.jpg") no-repeat;
+	position: relative;
+}
+.J_event a i{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 5px;
+	right: 0;
+    font-family: "icomoon";
+    font-style: normal;
+    text-align: center;
+    line-height: 20px;
+    color: #cccccc;
+    font-size: 10px;
+    background: rgba(0,0,0,0.4);
+}
+/*京东顶部end*/
+/*快捷导航模块制作 start*/
+.shortcut{
+    height: 30px;
+    background-color: #E3E4E5;
+    border-bottom: 1px solid #dddddd;
+    color: #9D9D9D;
+    font-size: 12px;
+    line-height: 30px;
+}
+.shortcut a{
+    color: #9D9D9D;
+    font-size: 12px;
+    text-decoration: none;
+}
+.shortcut a:hover{
+    color: #c81623;
+}
+.shortcut .fl li{
+    margin-left: 200px;
+}
+.shortcut .fr li{
+    float: left;
+}
+.pos{
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 14px;
+    color: #f10215;
+}
+.style-red{
+    color: #f10215 !important;
+}
+.spacer{
+    width: 1px;
+    height: 10px;
+    background-color: #cccccc;
+    margin: 10px 10px 0;
+}
+.dropdown{
+    padding-right: 15px;
+    position: relative;
+}
+.dropdown i{
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.erweima{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #cccccc;
+    padding: 3px;
+}
+/*快捷导航模块制作 end*/

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定广告案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            height: 44px;
+            background: url("images/top.png") no-repeat center;
+            position: fixed; /*固定定位,固定导航栏*/
+            top: 0;
+            left: 0;
+            width: 100%; /*必须宽度*/
+        }
+        .box{
+            width: 1002px;
+            margin: 44px auto 0;
+
+        }
+        .ad-l,.ad-r{
+            position: fixed; /*固定定位，固定左右两个广告*/
+            margin-top: 100px;
+        }
+        .ad-r{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<img src="images/ad-l.png" class="ad-l">
+<img src="images/ad-r.png" class="ad-r" >
+<div class="top"></div>
+<div class="box">
+    <img src="images/box.png">
+</div>
+</body>
+</html>

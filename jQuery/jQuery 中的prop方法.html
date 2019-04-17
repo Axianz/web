@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="选中">
+<input type="button" value="不选中">
+<input type="checkbox" id="ck">
+<script src="version/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+
+        /*对于布尔类型的属性，不要用attr方法，要用prop方法，prop用法与attr一样
+        * 否则会出现bug，例如这里如果用了attr则会出现，效果只是一次性的。
+        * */
+    $("input").eq(0).click(function () {
+        $("#ck").prop("checked",true);
+    });
+        $("input").eq(1).click(function () {
+            $("#ck").prop("checked",false);
+        });
+    });
+</script>
+
+
+</body>
+</html>

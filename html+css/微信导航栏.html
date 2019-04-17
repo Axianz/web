@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信导航栏</title>
+    <style>
+        /**{*/
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*}*/
+        body {
+            background: url("images/wx.jpg") repeat-x;
+        }
+
+        .nav a {
+            /* 1、a 左边放左圆角 并向文字要右边走15px*/
+            height: 33px;
+            line-height: 33px;
+            text-decoration: none;
+            color: #ffffff;
+            background: url("images/to.png") no-repeat;
+            display: inline-block; /*行元素没有高，需要转换为行内块元素*/
+            padding-left: 15px;
+        }
+
+        .nav span {
+            /* 2、span 放右边圆角 并且文字要向左边走15px*/
+            background: url("images/to.png") no-repeat right;
+            display: inline-block; /*行元素没有高，需要转换为行内块元素*/
+            padding-right: 15px;
+        }
+
+        .nav a:hover, .nav a:hover span { /*a标签和span标签都要设置鼠标经过的效果*/
+            background-image: url("images/ao.png");
+        }
+        .nav li{
+            list-style: none;
+            float: left;
+            margin: 0 20px;
+        }
+        .aa{
+            margin-left: 900px;
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>
+        <a href="#" class="aa">
+            <span>首页</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span>微信小程序</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span>微信公众号</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span>微信广告</span>
+        </a>
+    </li>
+</ul>
+
+</body>
+</html>
