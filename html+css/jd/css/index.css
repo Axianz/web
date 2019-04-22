@@ -1,7 +1,6 @@
 /*京东首页的css*/
 .jd{
     height: 480px;
-    background-color: pink;
     position: relative;
 }
 img{
@@ -9,7 +8,6 @@ img{
 }
 .jd-inner{
     height: 480px;
-    background-color: skyblue;
     position: relative;
     z-index: 1; /*只有定位的盒子才有 z-index*/
 }
@@ -88,15 +86,6 @@ img{
 .jd-col2-bd div img{
     width: 100%;
 }
-.firstPic{
-    margin-right: 10px;
-}
-.jd-col3{
-    width: 190px;
-    height: 480px;
-    background-color: yellow;
-    float: right;
-}
 .jd-col2-hd ol{
     position: absolute;
     bottom: 20px;
@@ -119,4 +108,140 @@ img{
 }
 .jd-col2-hd ol .current{
     background-color: #f10215;
+}
+.firstPic{
+    margin-right: 10px;
+}
+.jd-col3{
+    width: 190px;
+    height: 480px;
+    float: right;
+}
+.jd-col3 a{
+    font-size: 12px;
+    color: #747474;
+}
+.user{
+    height: 95px;
+    background-color: pink;
+    padding: 20px 15px 0;
+}
+
+.user-info{
+    height: 40px;
+    padding-left: 54px;
+    font-size: 12px;
+    color: #747474;
+    line-height: 22px;
+    position: relative;
+}
+.user-info a{
+    font-size: 12px;
+    color: #747474;
+}
+.user-info a:hover{
+    color: #f10215;
+}
+.info-img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.info-img img{
+    width: 100%;
+    height: auto; /*自动 跟随着宽度 一起缩放*/
+    border-radius: 50%;
+}
+.user-profit{
+    margin-top: 14px;
+}
+.user-profit a{
+    width: 70px;
+    height: 20px;
+    border: 2px solid #f10215;
+    display: inline-block;
+    font-size: 12px;
+    color: #f10215;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 2.4px;
+
+}
+.user-profit a:hover {
+    background-color: #f10215;
+    color: #ffffff;
+}
+
+.new{
+    height: 149px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px 15px 0;
+}
+.tab-hd{
+    border-bottom: 1px solid #cccccc;
+    padding: 3px 0;
+    position: relative;
+}
+.tab-hd a{
+    color: #747474;
+    font-size: 12px;
+    margin: 0 4px;
+
+}
+.cuxiao{
+    border-right: 1px solid #cccccc ;
+    padding-right: 10px;
+}
+.line{
+    width: 28px;
+    height: 2px;
+    background-color: #f10215;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.new .more1{
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+.tab-bd{
+    margin-top: 10px;
+}
+.tab-bd li{
+    height: 23px;
+    line-height: 23px;
+}
+.jd-service{
+    height: 209px;
+    width: 190px;
+    overflow: hidden;
+}
+.jd-service ul{
+    width: 192px;
+}
+.jd-service li{
+    width: 47px;
+    height: 69px;
+    float: left;
+    border-right:  1px solid #cccccc;
+    border-bottom:  1px solid #cccccc;
+}
+.jd-service li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.jd-service  i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 15px auto 8px;
+    background: url("../images/sprite_fs@1x.png") no-repeat;
+}
+.jd-service p{
+    text-align: center;
 }

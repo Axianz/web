@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .jj::before{ /*必须带一个属性content*/
+            content: "柳岩"; /*出入到div内部的前面 其实before是一个行内的盒子*/
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .jk::after{
+            content: "赵奕欢";/*出入到div内部的后面*/
+        }
+    </style>
+</head>
+<body>
+<div class="jj">是我老婆</div>
+<div class="jk">我老婆是</div>
+</body>
+</html>
