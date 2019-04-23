@@ -1,3 +1,68 @@
 body{
 	background-color: #f3f5f7;
 }
+header{
+	width: 1300px;
+	height: 100px;
+	background-color: pink;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+/*logo部分*/
+.logo{
+	width: 195px;
+	height: 42px;
+	float: left;
+}
+.logo a{
+	display: block;
+	width: 195px;
+	height: 42px;
+	background: url("../images/logo.png")  no-repeat;
+	text-indent: -990px; /*隐藏标题*/
+	overflow: hidden;/*隐藏标题*/
+}
+/*nav部分*/
+nav{
+	float: left;
+	margin-left: 20px;
+}
+nav li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+}
+nav li a{
+	display: block; /*a标签是行内元素，一定要转换为块元素，否则给高无效*/
+	font-size: 18px;
+	height: 40px;
+	padding: 0 5px;
+}
+nav li a:hover{
+	border-bottom: 2px solid #00a4ff;
+}
+.search{
+	width: 410px;
+	height: 40px;
+	background-color: purple;
+	float: left;
+	margin-left: 50px;
+}
+/*搜索部分*/
+.search input{
+	width: 361px;
+	height: 40px;
+	border: 1px solid #00a4ff;
+	outline: none; /*清除默认的搜索框轮廓线*/
+	padding-left: 10px;
+	float: left;
+}
+.search button{
+	width: 49px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	float: left;
+	background: url("../images/fa-search.png") no-repeat;
+}
