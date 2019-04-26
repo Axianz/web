@@ -4,7 +4,6 @@ body{
 header{
 	width: 1300px;
 	height: 100px;
-	background-color: pink;
 	margin: 0 auto;
 	padding-top: 30px;
 }
@@ -45,9 +44,8 @@ nav li a:hover{
 .search{
 	width: 410px;
 	height: 40px;
-	background-color: purple;
 	float: left;
-	margin-left: 50px;
+	margin-left: 205px;
 }
 /*搜索部分*/
 .search input{
@@ -65,4 +63,144 @@ nav li a:hover{
 	outline: none;
 	float: left;
 	background: url("../images/fa-search.png") no-repeat;
+}
+.personal{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+}
+.personal dt,.personal dd{
+	float: left;
+}
+.personal s{
+	position: relative;
+	padding: 0 20px;
+	text-decoration: none;
+}
+.personal s::before{
+	content: "";
+	display: block; /*因为伪元素默认的是行内元素*/
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+.personal dd span img{
+	border-radius: 50%;
+	margin-right: 10px;
+	transition: all 1s;
+}
+.personal  span img:hover{
+	transform: rotate(360deg);
+}
+.banner{
+	height: 420px;
+	background-color: #1c036c;
+}
+.inner{
+	height: 420px;
+	position: relative;
+}
+.subnav{
+	position: absolute;
+	width: 190px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+	padding-top: 20px;
+}
+.subnav li{
+	padding-left: 20px;
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+}
+.subnav a{
+	font-size: 14px;
+	color: #ffffff;
+	display: block;
+}
+.subnav span{
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+.subnav li a:hover{
+	color: #00b4ff;
+}
+.circle{
+	width: 175px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	/*margin-left: -88px; 等价于下面那个*/
+	transform: translate(50%);
+	bottom: 15px;
+
+}
+.circle i{
+	font-style: normal;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: rgba(255,255,255,0.4);
+	border-radius: 6px;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: all 0.4s; /*过度特效*/
+}
+.circle i:hover{
+	width: 20px;
+	background-color: #ffffff;
+}
+.timebook{
+	width: 228px;
+	height: 300px;
+	background-color:#ffffff;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%); /*等价于下面的写法，但是Y一定要大写*/
+	/*transform: translate(0,-50%);*/
+}
+.timebook dt{
+	height: 50px;
+	background-color: #9bceea;
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+}
+.timebook dd{
+	padding: 15px 20px 0;
+}
+.timebook dd li{
+	height: 60px;
+	border-bottom: 1px solid #cccccc;
+	padding-top: 6px;
+}
+.timebook dd li:last-child{
+	border: 0;
+}
+.timebook h5{
+	font-size: 16px;
+	font-weight: normal;
+}
+.all{
+	display: block;
+	height: 40px;
+	border: 1px solid #22b0ff;
+	color: #22b0ff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+}
+.all:hover{
+	background-color: #22b0ff;
+	color: #ffffff;
 }
