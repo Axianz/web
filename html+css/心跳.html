@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            width: 300px;
+            height: auto;
+            margin: 100px auto;
+            display:block;
+            animation: heart 0.5s infinite; /*一个叫heart的动画每隔0.5秒执行无数次*/
+            /*infinite无限循环*/
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin:auto;
+            animation: heart 0.5s infinite;
+        }
+        /*先动画声明*/
+        @keyframes heart {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform:scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+<img src="images/1.jpg">
+<div></div>
+</body>
+</html>

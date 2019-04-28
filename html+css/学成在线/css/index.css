@@ -138,7 +138,7 @@ nav li a:hover{
 	position: absolute;
 	left: 50%;
 	/*margin-left: -88px; 等价于下面那个*/
-	transform: translate(50%);
+	transform: translate(-50%);
 	bottom: 15px;
 
 }
@@ -283,7 +283,7 @@ nav li a:hover{
 	color: #ff7c2d;
 }
 footer {
-	height: 420px;
+	height: 280px;
 	background-color: #FFF;
 	margin-top: 30px;
 	padding-top: 30px;
