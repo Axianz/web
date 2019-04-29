@@ -21,13 +21,16 @@
 
   //优化后的:
 
-  document.getElementById("btn").onclick = function () {
+
     //根据id获取超链接,设置href属性
-    var aObj = document.getElementById("ak");
-    aObj.href = "http://www.itcast.cn";
+    document.getElementById("btn").onclick=function () {
+        var  obj =document.getElementById("ak");
+        obj.href="http://www.wuyounice.com";
+        obj.innerText="吾优";
+    }
+
     //根据id获取超链接,设置文字内容
-    aObj.innerText = "传智播客";
-  };
+
 
 </script>
 

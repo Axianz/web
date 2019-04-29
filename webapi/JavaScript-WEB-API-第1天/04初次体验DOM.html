@@ -9,7 +9,14 @@
 </head>
 <body>
 <!--html代码-->
-<input type="button" value="弹框" onclick="alert('哈哈,我又变帅了')" />
-
+<input type="button" value="弹框" id="btn" >
+<script>
+  function f() {
+      alert("哈哈，我被点了！");
+  }
+  document.getElementById("btn").onclick=function () {
+         alert("哈哈，最终版本！");
+     }
+</script>
 </body>
 </html>

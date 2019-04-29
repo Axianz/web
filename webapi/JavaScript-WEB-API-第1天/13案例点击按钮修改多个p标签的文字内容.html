@@ -28,17 +28,17 @@
 
   //案例:点击按钮设置多个p标签的文字内容
   //根据id获取按钮,注册点击事件,添加事件处理函数
-  document.getElementById("btn").onclick=function () {
-    //根据标签名字获取标签
-    var pObjs= document.getElementsByTagName("p");
-    //var pObjs=document.getElementById("dv1").getElementsByTagName("p");
-    //循环遍历这个数组
-    for(var i=0;i<pObjs.length;i++){
-      //每个p标签,设置文字
-      pObjs[i].innerText="我们都是p";
-    }
 
-  };
+    //根据标签名字获取标签
+   document.getElementById("btn").onclick=function () {
+       var obj = document.getElementById("dv1").getElementsByTagName("p");
+       for (var i=0;i<obj.length;i++){
+           obj[i].innerText="女神喜欢我，我今年能脱单！";
+       }
+   }
+
+    //循环遍历这个数组
+
 
 
 </script>

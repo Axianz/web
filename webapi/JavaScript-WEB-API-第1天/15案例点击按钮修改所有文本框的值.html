@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$永远的24k纯帅$</title>
-
+    <meta charset="UTF-8">
+    <title>$永远的24k纯帅$</title>
+    <style>
+        input{
+            width: 800px;
+        }
+        input:nth-child(1){
+            width: 60px;
+        }
+    </style>
 </head>
 <body>
 <input type="button" value="修改文本框的值" id="btn"/><br/>
@@ -16,18 +23,15 @@
 <input type="text" value=""/><br/>
 <input type="text" value=""/><br/>
 <script>
+    document.getElementById("btn").onclick = function () {
+        var obj = document.getElementsByTagName("input");
+        for (var i=0; i<obj.length;i++){
+            if (obj[i].type!=="button"){
+                obj[i].value="其实我还是很怀念绿光的！毕竟经历了那么多！去你吗的绿光，老子离开了你顺风顺水，还有钱花";
+            }
+        }
+    };
 
-  //根据id获取按钮,为按钮注册点击事件,添加事件处理函数
-  document.getElementById("btn").onclick = function () {
-    //获取所有的文本框
-    var inputs = document.getElementsByTagName("input");
-    for (var i = 0; i < inputs.length; i++) {
-      //判断这个元素是不是按钮
-      if (inputs[i].type != "button") {
-        inputs[i].value = "其实,助教喜欢小苏";
-      }
-    }
-  };
 </script>
 </body>
 </html>

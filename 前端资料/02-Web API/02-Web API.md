@@ -48,7 +48,7 @@ JavaScript的核心，描述了语言的基本语法和数据类型，ECMAScript
 
 #### DOM - 文档对象模型
 
-一套操作页面元素的API
+一套操作页面元素的AP I
 
 DOM可以把HTML看做是文档树，通过DOM提供的API可以对树上的节点进行操作
 
